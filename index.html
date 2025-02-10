@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/my-notion-face-transparent.png" />
+    <title>Sachin Dhami</title>
+</head>
+<body>
+
+
+<!-- og nav bar without image -->
+<!-- Navigation Bar -->
+    <!-- <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">Sachin Dhami.</a>
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-light">
+            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Experience</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="mailto:" uk-scroll>Contact</a></li>
+
+        </ul>
+
+    </div>
+</nav> -->
+
+
+
+
+
+
+
+
+<!-- nav bar with image icon, seperate from nav bar mobile -->
+    <!-- <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <div class="uk-navbar-left">
+            <a href="" class="uk-navbar-item uk-logo uk-light">Sachin Dhami.</a>
+        </div>
+        <div class="uk-navbar-center">  <img src="img/my-notion-face-transparent.png" alt="Navbar Icon" class="navbar-icon">
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-light">
+                <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
+                <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Experience</a></li>
+                <li><a class="uk-button-text uk-text-capitalize" href="mailto:" uk-scroll>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <div class="uk-navbar-left">
+            <a href="" class="uk-navbar-item uk-logo uk-light">SachinDhami.</a>
+        </div>
+        <div class="uk-navbar-center"> <img src="img/my-notion-face-transparent.png" alt="Navbar Icon" class="navbar-icon">
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-light">
+                <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+            </ul>
+        </div>
+    </nav> -->
+
+
+
+
+
+
+<!-- combined Nav bar and nav bar mobile for image -->
+    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <div class="uk-navbar-left">
+            <a href="" class="uk-navbar-item uk-logo uk-light">Sachin Dhami.</a>
+        </div>
+        <div class="uk-navbar-center">
+            <img src="img/my-notion-face-transparent.png" alt="Navbar Icon" class="navbar-icon">
+        </div>
+        <div class="uk-navbar-right uk-visible@m">  <ul class="uk-navbar-nav uk-light">
+                <li><a class="uk-button-text uk-text-capitalize" href="#aboutline" uk-scroll>About</a></li>
+                <li><a class="uk-button-text uk-text-capitalize" href="#experienceline" uk-scroll>Experience</a></li>
+                <!-- <li><a class="uk-button-text uk-text-capitalize" href="mailto:sachdhami@gmail.com" uk-scroll>Contact</a></li> -->
+                <li><a class="uk-button-text uk-text-capitalize" href="mailto:sachdhami@gmail.com" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+
+        
+        <!-- old hamburger menu with the grey color -->
+        <!-- <div class="uk-navbar-right uk-hidden@m">  <ul class="uk-navbar-nav uk-light">
+                <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+            </ul>
+        </div> -->
+
+
+
+        <!-- new hamburger menu with the black color -->
+        <div class="uk-navbar-right uk-hidden@m">  
+            <ul class="uk-navbar-nav uk-light">
+                <li>
+                    <button uk-toggle="target: #offcanvas-nav" type="button" class="uk-navbar-toggle" uk-navbar-toggle-icon style="color: #36454F;"></button>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </nav>
+    
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
+                <li class="uk-active"><a href="#aboutline" uk-scroll>About</a></li>
+                <li class="uk-active"><a href="#experienceline" uk-scroll>Experience</a></li>
+                <li class="uk-active"><a href="mailto:sachdhami@gmail.com" target="_blank">Contact</a></li> 
+            </ul>
+        </div>
+    </div>
+<!-- Navigation Bar Ends  -->
+
+<!-- Navigation Bar Mobile -->
+<!-- <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">SachinDhami.</a>
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-light">
+            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+
+        </ul>
+
+    </div>
+</nav> -->
+<!-- Change This -->
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
+            <li class="uk-active"><a href="#aboutline" uk-scroll>About</a></li>
+            <li class="uk-active"><a href="#experienceline" uk-scroll>Experience</a></li>
+            <li class="uk-active"><a href="mailto:sachdhami@gmail.com" target="_blank">Contact</a></li> 
+
+        </ul>
+
+
+    </div>
+</div>
+
+<!-- Navigation Bar Mobile Ends -->
+<!-- Home -->
+
+
+<!-- <section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">Hey! I'm Sachin, and I'm passionate about<br>bringing user-centric products to life.</h1> -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+    <div class="message-container">
+        <div class="message-bubble">
+            <div class="message-content">
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h1 class="message-text">Hey! I'm Sachin, and I'm passionate about bringing user-centric products to life.💡</h1>
+                <!-- There was a <br> here before I took it out: -----------------^ -->
+            </div>
+            <div class="message-stem"></div>
+        </div>
+    </div>
+    
+    <script>
+        const messageBubble = document.querySelector('.message-bubble');
+        const messageContent = document.querySelector('.message-content');
+        const messageText = document.querySelector('.message-text');
+        const typingDots = document.querySelector('.typing-dots');
+    
+        // Initial state
+        messageText.style.opacity = 0;
+        typingDots.style.display = 'flex';
+        messageBubble.style.opacity = 1;
+        messageBubble.style.width = '40px'; // Small enough for dots
+        messageBubble.style.height = '20px';
+        messageBubble.style.padding = '6px 10px'; // Small padding for dots
+    
+        setTimeout(() => {
+            // Hide typing dots before expanding
+            typingDots.style.opacity = 0;
+            typingDots.style.transition = 'opacity 0.3s ease-out';
+    
+            setTimeout(() => {
+                typingDots.style.display = 'none'; // Remove dots completely
+                
+                // Expand with bounce effect
+                messageBubble.style.width = 'auto';
+                messageBubble.style.height = 'auto';
+                messageBubble.style.padding = '12px 18px'; // Expand padding
+                messageBubble.style.transform = 'scale(1.1)';
+                messageBubble.style.transition = 'transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), width 0.3s ease-out, height 0.3s ease-out, padding 0.3s ease-out';
+    
+                setTimeout(() => {
+                    messageBubble.style.transform = 'scale(1)'; // Slight shrink back
+    
+                    setTimeout(() => {
+                        messageText.style.opacity = 1;
+                        messageText.style.transition = 'opacity 0.5s ease-in';
+                    }, 300);
+    
+                }, 600);
+            }, 300);
+        }, 1000);
+    </script>
+
+
+
+  
+     <!-- scrolling effect, delete if you want to get rid of: -->
+    <!-- <script>
+        window.addEventListener('scroll', function() {
+            const h1 = document.querySelector('h1');
+            const scrollPosition = window.scrollY;
+            const maxTranslate = 100; 
+
+            let translateValue = Math.min(scrollPosition * 0.5, maxTranslate);
+
+            h1.style.transform = `translateX(${translateValue}px)`;
+        });
+    </script> -->
+    <!-- end scrolling effect -->
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- this is the old about me button WITHOUT THE ANIMATIONS: -->
+<!-- 
+    <a href="#aboutline" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me 🔽</a> -->
+
+
+
+
+    <!-- this is the NEW about me button **WITH** THE ANIMATIONS: -->
+
+    <a href="#aboutline" id="animatedButton" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me 🔽</a>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const button = document.getElementById("animatedButton");
+    
+          // Start hidden and small
+          button.style.opacity = "0";
+          button.style.transform = "translateY(20px) scale(0.8)";
+          button.style.transition = "opacity 0.5s ease-out, transform 0.5s ease-out";
+    
+          let text = "About Me 🔽";
+          button.innerHTML = ""; // Initially empty
+          let index = 0;
+    
+          // Delay before showing button and starting typing
+          setTimeout(() => {
+              button.style.opacity = "1";
+              button.style.transform = "translateY(0) scale(1)";
+    
+              // Start typing effect after a short delay
+              setTimeout(() => {
+                  let typingInterval = setInterval(() => {
+                      if (index < text.length) {
+                          button.innerHTML += text[index];
+                          index++;
+                      } else {
+                          clearInterval(typingInterval);
+                      }
+                  }, 50); // Typing speed
+              }, 300); // Short delay before typing begins
+    
+          }, 3000); // Full 3-second delay before button animates in
+    
+          // Hover Effect - Slight message bubble bounce
+          button.addEventListener("mouseover", function () {
+              this.style.transition = "transform 0.2s ease-in-out";
+              this.style.transform = "scale(1.05)";
+          });
+    
+          button.addEventListener("mouseleave", function () {
+              this.style.transform = "scale(1)";
+          });
+    
+          // Click Effect - Smooth Scroll without Changing URL
+          button.addEventListener("click", function (event) {
+              event.preventDefault(); // Prevent default anchor behavior (stops URL change)
+    
+              this.style.transition = "transform 0.2s ease-in-out";
+              this.style.transform = "scale(0.95)"; // Slight press effect
+    
+              setTimeout(() => {
+                  this.style.transform = "scale(1)"; // Restore to normal size
+    
+                  // Smooth scroll to the target section manually
+                  document.querySelector("#aboutline").scrollIntoView({
+                      behavior: "smooth"
+                  });
+    
+              }, 200);
+          });
+      });
+    </script>
+
+
+    <!-- end of about me button animation -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</section>
+
+<!-- <section class="hero uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <div class="hero-content">
+        <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm Sachin, and I'm passionate about<br>bringing user-centric products to life.</h1>
+        <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
+    </div>
+    <img src="img/my-notion-face-transparent.png" alt="My Notion Face" class="hero-image">
+</section> -->
+
+<!-- Home Ends -->
+<br>
+
+
+<hr id="aboutline" class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
+
+<!-- About Me -->
+<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
+
+<!-- Picture -->
+<img src="img/sachinphoto.jpg" alt="About Photo" class="about-photo uk-margin-xlarge-left">
+<br>
+
+<!-- Change here to ur paragraph -->
+ <br>
+<p class="uk-margin-xlarge-left uk-margin-xlarge-right">
+    My approach to products is shaped by my studies in <a href="https://ischool.uw.edu/programs/informatics" style="color: black; text-decoration: none;" target="_blank" >Informatics at the University of Washington</a>, with a focus on Human-Computer Interaction and Software Development.
+I have a passion for design, development, and leading product vision, always seeking to understand user pain points and solve meaningful problems that improve people’s lives. I thrive in cross-functional collaboration, working closely with engineers, designers, and stakeholders to align strategy with execution. My experience in mobile development helps me create apps and programs that feel smooth, fast, and easy to use on any device.
+
+<br> <br>I believe in validating with data, not just opinions — prioritizing features based on impact, feasibility, and alignment with core goals. Not all feature requests are equal, and building everything leads to a bloated product. Instead, I focus on solving real problems efficiently, ensuring every decision is backed by insights. I communicate the ‘why’ behind product choices and explore alternative solutions that better fit the roadmap.
+
+At my core, I’m driven by user empathy, research, and data-driven decision-making. I aim to create products that are intuitive, impactful, and built for the people who use them.
+
+<br> <br> When I’m offline, you can find me cheering for the Seahawks or attempting to learn the ukulele. Music is always part of my day — check out what I’m currently listening to below.
+</p>
+
+
+<!-- <a href="" class="uk-margin-xlarge-left uk-light uk-button-text" uk-icon="instagram"></a> &nbsp; -->
+
+<!-- target="_blank" gets the link to open in a new tab, delete from these buttons if you want to remove this feature -->
+
+<a href="https://github.com/sachdhami" class="uk-margin-xlarge-left uk-light uk-button-text" uk-icon="github" target="_blank"></a> &nbsp;<a href="https://www.linkedin.com/in/sachin-dhami/" class=" uk-light uk-button-text" uk-icon="linkedin" target="_blank"></a>
+<br>
+<br>
+<br>
+
+
+<!-- music player -->
+<!-- <script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-3d19651b-fca0-4916-ad36-1c4d97501148" data-elfsight-app-lazy></div> -->
+
+    <!-- Custom Music Player -->
+    <h4 class="uk-margin-xlarge-left uk-light">Now Playing</h4>
+    <br>
+
+    <!-- Custom Horizontal Music Player -->
+    <div class="uk-margin-xlarge-left music-player">
+        <img src="img/mac miller cover.jpeg" alt="Album Cover" class="album-cover">
+        
+        <div class="music-info">
+            <h4 id="song-title">Dang! (feat. Anderson .Paak)</h4>
+            <p id="artist-name">Mac Miller</p>
+            <audio id="audio" src="audio/Dang.mp3"></audio>
+
+            <div class="controls">
+                <button id="playPause">▶️</button>
+                <input type="range" id="seekBar" value="0" step="1">
+                <p id="time">0:00 / 0:00</p>
+
+                <div class="volume-control">
+                    🔊 <input type="range" id="volumeBar" min="0" max="1" step="0.1" value="1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <a href="#experienceline" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>Experience 🔽</a>
+
+</section>
+
+
+ 
+    <script>
+const audio = document.getElementById("audio");
+const playPause = document.getElementById("playPause");
+const seekBar = document.getElementById("seekBar");
+const timeDisplay = document.getElementById("time");
+const volumeBar = document.getElementById("volumeBar");
+
+playPause.addEventListener("click", () => {
+    if (audio.paused) {
+        audio.play();
+        playPause.textContent = "⏸️"; // Pause emoji
+    } else {
+        audio.pause();
+        playPause.textContent = "▶️"; // Play emoji
+    }
+});
+
+audio.addEventListener("timeupdate", () => {
+    if (!isNaN(audio.duration)) {
+        seekBar.value = (audio.currentTime / audio.duration) * 100;
+        timeDisplay.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+    }
+});
+
+seekBar.addEventListener("input", () => {
+    audio.currentTime = (seekBar.value / 100) * audio.duration;
+});
+
+volumeBar.addEventListener("input", () => {
+    audio.volume = volumeBar.value;
+});
+
+function formatTime(seconds) {
+    const min = Math.floor(seconds / 60);
+    const sec = Math.floor(seconds % 60);
+    return `${min}:${sec < 10 ? "0" + sec : sec}`;
+}
+    </script>
+
+
+
+<!-- end music player -->
+
+
+
+</section>
+
+
+<!-- About Me Ends -->
+
+
+
+
+</section>
+
+<!-- Projects Section -->
+<hr id="experienceline" class="uk-margin-xlarge-left uk-margin-xlarge-right">
+
+
+<!-- <section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">Experience</h3>
+
+<p class="uk-margin-xlarge-left">Check out some of my work!</p>
+<br>
+
+<div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+
+    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Mindscape</h4>
+        <p>An AI-driven mental health app.</p>
+        <a class="uk-button-text uk-text-decoration-none" href="" style="color: black;">
+            <span uk-icon="icon: link">
+            </span> Website Link </a>
+        </div>
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+            <h4>AI Research</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a class="uk-button-text uk-text-decoration-none" href="" style="color: black;">
+                <span uk-icon="icon: link">
+                </span> Website Link </a>
+            </div>
+
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+            <h4>Spiel!</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a class="uk-button-text uk-text-decoration-none" href="" style="color: black;">
+                <span uk-icon="icon: link">
+                </span> Website Link </a>
+            </div>
+        
+
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+            <h4>Esportscenter</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a class="uk-button-text uk-text-decoration-none" href="" style="color: black;">
+                <span uk-icon="icon: link">
+                </span> Website Link </a>
+            </div>
+
+
+
+    <br>
+
+
+</section> -->
+
+
+
+
+<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h3 class="uk-margin-xlarge-left uk-light">Experience</h3>
+    <p class="uk-margin-xlarge-left">Check out some of my work and contributions!</p>
+    <br>
+
+    <div class="uk-margin-xlarge-left uk-margin-xlarge-right experience-container">
+
+        <!-- Mindscape -->
+        <a href="mindscape.html" class="experience-card">
+            <div class="experience-image" style="background-image: url('img/Mindscape/mindscapeone.png');">
+                <div class="experience-overlay">
+                    <h4>Mindscape</h4>
+                    <p>An AI-driven mental health app.</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- AI Research -->
+        <a href="hcde.html" class="experience-card">
+            <div class="experience-image" style="background-image: url('img/Hcde/hcdeoneNEW.png');">
+                <div class="experience-overlay">
+                    <h4>Research</h4>
+                    <p>Exploring LLM-based chatbot UX and AI in design.</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Spiel -->
+        <a href="spiel.html" class="experience-card">
+            <div class="experience-image" style="background-image: url('img/Spiel/spielone.png');">
+                <div class="experience-overlay">
+                    <h4>Spiel!</h4>
+                    <p>An interactive review app for users to reccomend anything.</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Esportscenter -->
+        <a href="esports.html" class="experience-card">
+            <div class="experience-image" style="background-image: url('img/Esports/esportscenterone.png');">
+                <div class="experience-overlay">
+                    <h4>Esportscenter</h4>
+                    <p>A TikTok-based Esports news outlet.</p>
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+    <br>
+</section>
+
+
+
+
+
+<!-- Small Projects -->
+
+
+<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h3 class="uk-margin-xlarge-left uk-light">Projects and Extras</h3>
+    <br>
+    <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body">
+            <a class="uk-button-text uk-text-decoration-none" href="https://www.instagram.com/pmclubuw/" target="_blank" style="color: black;">
+                <p>Co-founded and launched the Product Management Club at the University of Washington, 
+                    establishing its foundation, vision, and initiatives to help students explore product management.</p>
+            </a>
+        </div>
+
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body">
+            <a class="uk-button-text uk-text-decoration-none" href="https://github.com/sachdhami/WeatherAppIOS/tree/main" target="_blank" style="color: black;">
+                <p>Developed a mobile weather app with a team using Swift.</p>
+            </a>
+        </div>
+
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body">
+            <a class="uk-button-text uk-text-decoration-none" href="https://github.com/sachdhami/NFLDataAnalysis" target="_blank" style="color: black;">
+                <p>Analyzing NFL injury and geospatial data using Python and Machine Learning.</p>
+            </a>
+        </div>
+
+        <!-- <div class="uk-margin uk-card uk-card-secondary uk-card-body">
+            <a class="uk-button-text uk-text-decoration-none" href="" target="_blank" style="color: black;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
+        </div> -->
+    </div>
+    <br>
+</section>
+
+
+
+
+
+
+
+
+<!-- use this to add back the divider line at the bottom -->
+<!-- <hr class="uk-margin-xlarge-left uk-margin-xlarge-right"> -->
+</div>
+<!-- Projects Section Ends -->
+
+<!-- Footer Section -->
+<footer class="footer">
+    <p class="footer-text">Thanks for stopping by 👋</p>
+
+    <div class="footer-links">
+        <p>📧 Contact Me: <a href="mailto:sachdhami@gmail.com" target="_blank">sachdhami@gmail.com</a></p>
+        <p>🤝 Let's Connect: 
+            <a href="https://www.linkedin.com/in/sachin-dhami" target="_blank" class="footer-icon">
+                <span uk-icon="linkedin"></span>
+            </a>
+        </p>
+    </div>
+
+    <p class="copyright">© 2025 Sachin Dhami 👨🏽‍💻</p>
+</footer>
+<!-- end footer -->
+
+
+
+
+</body>
+</html>

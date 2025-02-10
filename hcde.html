@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/my-notion-face-transparent.png" />
+    <title>Esportscenter - Experience</title>
+</head>
+<body>
+
+<!-- Navbar with Back Button -->
+<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <div class="uk-navbar-left">
+        <a href="index.html" class="uk-navbar-item uk-logo uk-light">← Back</a>
+    </div>
+
+    <div class="uk-navbar-center">
+        <img src="img/my-notion-face-transparent.png" alt="Navbar Icon" class="navbar-icon">
+    </div>
+</nav>
+
+<!-- Experience Title -->
+<!-- <section class="experience-header">
+    <h1>Research</h1>
+    <p>Conducted research with the University of Washington in the department of Human Centered Design & Engineering and the Information School, working with faculty and research scientists.</p>
+</section> -->
+
+
+
+<section class="experience-header">
+    <h1>Research</h1>
+    <p>I conducted research with the University of Washington in the department of 
+        <a href="https://www.hcde.washington.edu/" target="_blank" style="color: black; text-decoration: none;">Human Centered Design & Engineering</a> 
+        and the 
+        <a href="https://ischool.uw.edu/" target="_blank" style="color: black; text-decoration: none;">Information School</a>, 
+        working with faculty and research scientists.
+    </p>
+</section>
+
+<!-- PDF & Text Sections -->
+<section class="experience-container">
+    <div class="experience-section left">
+        <embed src="Files/vrresearch.pdf" type="application/pdf" width="100%" height="400px" />
+        <div class="experience-text">
+            <h3>Unveiling User Interactions in VR Environments</h3>
+            <p>We wanted to examine how people interact with body tracking in VR and whether they collaborate better through VR avatars or real-life interactions. 
+                With more teams using avatars in online meetings and people displaying Apple Memoji avatars on FaceTime, we wanted to explore how this impacts communication and teamwork. 
+                To measure success rates, we had users complete tasks and play games both in VR with avatars and in real life. 
+                We analyzed their experiences, finding challenges with motion capture accuracy, avatar responsiveness, and adapting to VR controls. 
+                Some users felt disoriented or experienced physical discomfort, while others found body tracking enhanced immersion. 
+                Our insights help improve VR interface design to make virtual interactions feel more natural and effective. 
+                Check out our final presented findings.</p>
+        </div>
+    </div>
+
+    <div class="experience-section right">
+        <embed src="Files/uxresearch.pdf" type="application/pdf" width="100%" height="400px" />
+        <div class="experience-text">
+            <h3>Exploring the Experiences of UX Practitioners Using ChatGPT: A Cross-cultural
+                Study</h3>
+            <p>Working cross-functionally with a team across the University of Seoul, we explored how UX professionals used ChatGPT in their work. 
+                We interviewed 30 practitioners from South Korea and the U.S. to understand their experiences. 
+                We found key differences: Korean designers struggled with prompt generation, while U.S. designers were more concerned about data privacy. 
+                Based on these insights, we proposed design solutions to improve AI tools for UX work.
+                Check out the full published paper submitted to the CHI Conference on Human Factors in Computing Systems.</p>
+        </div>
+    </div>
+
+    <div class="experience-section right">
+        <embed src="Files/inforesearch.pdf" type="application/pdf" width="100%" height="400px" />
+        <div class="experience-text">
+            <h3>Lost in Translation: The Impact of Google Translate’s Inaccuracy and Misinformation</h3>
+            <p>Conducting research with the Information School, we wanted to study the limitations of Google Translate and how its inaccuracies impact different cultural and ethnic communities. 
+                With translation tools playing a key role in communication, we wanted to explore the risks of misinformation, especially in critical areas like healthcare. 
+                We conducted surveys and interviews with multilingual users to understand their experiences. 
+                We found that translation errors often distort meaning, lack cultural nuance, and can even mislead people in serious situations. 
+                Our research highlights the need for more ethical and accurate AI translation tools that respect linguistic and cultural diversity. 
+                View our research paper here.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-links">
+        <p>📧 Contact Me: <a href="mailto:sachdhami@gmail.com">sachdhami@gmail.com</a></p>
+        <p>🤝 Let's Connect: 
+            <a href="https://www.linkedin.com/in/sachdhami" target="_blank">
+                <span uk-icon="linkedin"></span>
+            </a>
+        </p>
+    </div>
+    <p class="copyright">© 2024 Sachin Dhami 👨🏽‍💻</p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(".experience-header, .experience-section");
+    
+        function checkScroll() {
+            elements.forEach((element) => {
+                const rect = element.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.9) {
+                    element.classList.add("visible"); 
+                } else {
+                    element.classList.remove("visible"); 
+                }
+            });
+        }
+    
+        window.addEventListener("scroll", checkScroll);
+        checkScroll();
+    });
+</script>
+</body>
+</html>

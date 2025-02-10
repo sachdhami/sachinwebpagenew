@@ -1,0 +1,887 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #FCFBF4;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #000;
+}
+
+/* Navigation Bar */
+.uk-navbar-container {
+    background-color: #FCFBF4 !important;
+}
+
+.uk-navbar-nav a, .uk-logo {
+    color: #000 !important;
+}
+
+/* Home Section, OG Home edits before the effects, Black home heading - IMPORTANT */ 
+h1 {
+    color: #000 !important; 
+}
+
+/* ================================================================= */
+
+/* original buttons!!!!! */
+
+/* 
+.uk-button-secondary {
+    background-color: #FCFBF4 !important;
+    color: #000 !important;
+    border: 1px solid #ccc;
+}
+
+.uk-button-secondary:hover {
+    background-color: #f0f0f0 !important;
+} */
+
+
+
+/* new imessage buttons!!!! */
+
+.uk-button-secondary {
+    background-color: #ecebeb !important;
+    color: #000 !important;
+    font-size: 20px;
+    /* ^ Added this to increase size of button text size */
+    border: 1px solid #ecebeb;
+    position: relative; /* Needed for the absolute positioning of the stem */
+    padding: 3px 15px;
+    /* ^used to be 10 (for the first number) and 20 for the second */
+    border-radius: 15px;
+    /* ^used to be 10 */
+}
+
+/* Message Stem */
+.uk-button-secondary::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 12px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid #ecebeb; /* Matches button background */
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+/* ================================================================= */
+
+/* Headings (All) */
+h1, h2, h3, h4 {
+  color: #000 !important; /* All headings black - IMPORTANT */
+}
+
+/* About Me Section */
+#about p {
+    color: #000;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#about a[uk-icon] {
+    color: #000 !important;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+/* ================================================================= */
+
+
+/* OLD EXPERIENCES SECTION */
+
+/* Experience/Projects Section */
+/* #projects .uk-card {
+  background-color: #FCFBF4;
+  border: 1px solid #000;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#projects .uk-card h4 {
+  color: #000;
+  margin-bottom: 10px;
+}
+
+#projects .uk-card p {
+    color: #000;
+} */
+
+
+
+
+/* NEW EXPERIENCES SECTION */
+
+/* Experience/Projects Section */
+.experience-card {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 280px; /* Keeps all images the same height */
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: 15px; /* Rounded corners for a sleek look */
+  }
+  
+  /* Ensures images repeat inside the container */
+  .experience-image {
+    width: 100%;
+    height: 100%;
+    background-size: contain; /* Keeps full image visible inside the box */
+    background-repeat: repeat; /* Repeats image inside the box */
+    background-position: center;
+    border-radius: 15px; /* Keeps rounded corners consistent */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .experience-card:hover .experience-image {
+    transform: scale(1.05); /* Subtle zoom effect on hover */
+  }
+  
+  /* Ensures the hover overlay covers the full image */
+  .experience-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85); /* Darker overlay covering entire image */
+    color: white; /* Text is now fully white */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center text horizontally */
+    justify-content: center; /* Center text vertically */
+    text-align: center; /* Ensure text is centered */
+    opacity: 0;
+    padding: 20px; /* Adds padding so text doesn’t touch edges */
+    box-sizing: border-box; /* Ensures padding stays within image */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .experience-card:hover .experience-overlay {
+    opacity: 1;
+  }
+  
+  /* Ensure title (h4) is white and fully visible */
+  .experience-overlay h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white !important; /* Forces title text to be white */
+    width: 100%; /* Keeps text within the overlay */
+  }
+  
+  /* Ensure description text is white and fits properly */
+  .experience-overlay p {
+    margin-top: 5px;
+    font-size: 1rem;
+    max-width: 90%;
+    color: white !important; /* Forces description text to be white */
+    word-wrap: break-word; /* Prevents text from overflowing */
+  }
+  
+  /* Add spacing between each experience */
+  .experience-container > a {
+    display: block;
+    margin-bottom: 30px; /* Adds space between experience sections */
+  }
+
+/* SHIFTS EXPERIENCE SECTION SLIGHTLY TO THE LEFT, DELETE IF YOU WANT IT CENTERED */
+.experience-container {
+    position: relative;
+    left: -20px; /* Adjust this value to shift left while maintaining alignment */
+  }
+
+
+
+
+
+/* END OF NEW EXPERIENCES SECTION */
+
+
+
+
+
+
+/* ================================================================= */
+
+
+
+
+
+
+/* ... other styles ... */
+
+.navbar-icon {
+    max-height: 60px; /* Increased max-height again */
+    width: auto;
+    margin: 0 20px; /* Increased margin again */
+    vertical-align: middle;
+}
+
+/* Make sure the logo and other navbar items are also vertically aligned */
+.uk-navbar-nav > li > a, .uk-logo {
+  display: flex;
+  align-items: center; /* Align items to center vertically */
+}
+
+
+
+/* ================================================================= */
+
+
+/* Profile Picture Styling */
+.about-photo {
+    width: 400px; /* Adjust size */
+    height: 400px; /* Keeps it square */
+    border-radius: 12px; /* Slightly curved edges */
+    object-fit: cover; /* Ensures no distortion */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+/* Hover Effect */
+.about-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .about-photo {
+        width: 300px;
+        height: 300px;
+        margin-left: var(--content-margin-mobile, 20px);
+    }
+}
+
+
+
+
+
+
+/* ================================================================= */
+
+
+
+
+.message-bubble {
+  background-color: #fff; /* White bubble */
+  border-radius: 20px; /* Rounded corners */
+  padding: 15px 20px; /* Padding inside the bubble */
+  margin: 20px auto; /* Center the bubble */
+  display: inline-block; /* Adjust width as needed */
+  position: relative; /* For positioning the dots */
+}
+
+.typing-dots {
+  position: absolute;
+  bottom: 10px; /* Adjust vertical position */
+  left: 15px; /* Adjust horizontal position */
+  display: flex;
+}
+
+.typing-dots span {
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+  background-color: #888; /* Gray dots */
+  border-radius: 50%; /* Circular dots */
+  animation: typing 1s linear infinite; /* Typing animation */
+  opacity: 0; /* Initially hidden */
+}
+
+.typing-dots span:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.typing-dots span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.typing-dots span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.message-text {
+  /* Your existing h1 styles, but remove any margins that might interfere with the bubble */
+    margin-left: 0;
+    margin-right: 0;
+    color: #000 !important;
+}
+
+@keyframes typing {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+
+
+
+
+
+
+
+.message-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* Reserve enough space so the page doesn’t shift */
+.message-bubble {
+    background-color: #007AFF;
+    color: white;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    padding: 6px 10px;
+    min-width: 40px; /* Initial size for dots */
+    min-height: 20px;
+    max-width: 300px; /* Prevents excessive expansion */
+    transform-origin: left bottom;
+    transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Ensures enough reserved space to prevent layout shift */
+.message-container::before {
+    content: "";
+    display: block;
+    height: 60px; /* Matches expected final bubble height */
+}
+
+/* Keep the layout stable */
+.message-content {
+    display: flex;
+    align-items: center;
+    min-height: 50px; /* Reserve enough space for expansion */
+}
+
+/* Adjust dot animations */
+.typing-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-dots span {
+    /* Changed size of dots in message bubble, used to be 5px */
+    width: 8px;
+    height: 8px;
+    margin-right: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: typing 1s linear infinite;
+    opacity: 0;
+}
+
+.message-text {
+    margin: 0;
+    font-size: 1.6em;
+    /* used to be 1.2 ^ */
+    white-space: pre-wrap;
+    transition: opacity 0.5s ease-in;
+    opacity: 0;
+}
+
+/* Keep the message stem properly positioned */
+.message-stem {
+    position: absolute;
+    bottom: -12px;
+    left: 12px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid #007AFF;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+@keyframes typing {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+/* ================================================================= */
+
+
+
+/* music player */
+
+/* General Music Player Styles */
+.music-player {
+    display: flex;
+    align-items: center;
+    background: #FCFBF4;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 480px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Album Cover */
+.album-cover {
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    margin-right: 12px;
+    object-fit: contain;
+}
+
+/* Music Info */
+.music-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+p {
+    margin: 2px 0;
+    font-size: 17px;
+    /* ^font size for paragraphs */
+    color: #bbb;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Play Button */
+button {
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 4px 6px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+/* Seek Bar */
+input[type="range"] {
+    width: 100px;
+    appearance: none;
+    background: #555;
+    height: 4px;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background:black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Volume Control */
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.volume-control input {
+    width: 50px;
+}
+
+/* Time Display Alignment */
+#time {
+    min-width: 80px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 9px; /* Adjust this to lower time display */
+}
+
+/* ======================== */
+/* MOBILE FRIENDLY CHANGES */
+/* ======================== */
+
+@media (max-width: 500px) {
+    .music-player {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 16px;
+        max-width: 100%;
+    }
+
+    .album-cover {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .music-info {
+        align-items: center;
+        width: 100%;
+    }
+
+    .controls {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        width: 100%;
+    }
+
+    input[type="range"] {
+        width: 80%;
+    }
+
+    .volume-control {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #time {
+        position: static;
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+
+
+
+
+/* ================================================================= */
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background: #FCFBF4;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 14px;
+    border-top: 1px solid #000;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Makes it responsive on smaller screens */
+}
+
+.footer-links p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-icon span {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Responsive Footer for Mobile */
+@media (max-width: 500px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-links p {
+        font-size: 13px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+}
+
+
+/* end footer section */
+
+/* ================================================================= */
+
+
+
+
+
+/* Experience page CSS */
+
+/* SCROLL ANIMATIONS */
+/* ==================== */
+
+/* Initially Hide Elements */
+.experience-header,
+.experience-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Fade in the Header */
+.experience-header.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slide-in Effect for Image & Text */
+.experience-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Left Side Elements */
+.experience-section.left {
+    transform: translateX(-100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Right Side Elements */
+.experience-section.right {
+    transform: translateX(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* When They Become Visible */
+.experience-section.visible.left {
+    transform: translateX(0);
+}
+
+.experience-section.visible.right {
+    transform: translateX(0);
+}
+
+/* ==================== */
+/* GENERAL EXPERIENCE PAGE STYLES */
+/* ==================== */
+
+.experience-header {
+    text-align: left;
+    padding: 80px 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.experience-header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.experience-header p {
+    font-size: 20px;
+    color: #444;
+    max-width: 700px;
+}
+
+.experience-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.experience-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.experience-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Larger Images */
+.experience-section img {
+    width: 65%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Cool hover effect */
+/* .experience-section img:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+} */
+
+/* Text Section */
+.experience-section .experience-text {
+    width: 40%;
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.experience-text h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.experience-text p {
+    color:#333;
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 900px) {
+    .experience-section {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .experience-section img {
+        width: 90%;
+    }
+
+    .experience-section .experience-text {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .experience-header h1 {
+        font-size: 32px;
+    }
+
+    .experience-header p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+}
+
+/* 
+Fading for experience page */
+
+/* Initially Hidden */
+.experience-header,
+.experience-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Fade in when visible */
+.experience-header.visible,
+.experience-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fade out when scrolling up */
+.experience-header:not(.visible),
+.experience-section:not(.visible) {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+
+
+/* ================================================================= */
+
+
+/* LINK HOVERS */
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s ease-in-out;
+}
+
+a:hover {
+    transform: translateY(-3px);
+}
+
+
+
+/* a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    transition: opacity 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+a:hover {
+    opacity: 0.7;
+    font-weight: 600;
+} */
+
+
+/* ================================================================= */
+
+
+/* MAKING ESPORTSCENTER MOBILE WIREFRAME IMAGES SMALLER  */
+
+.smaller-image {
+    width: 75%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* ================================================================= */
